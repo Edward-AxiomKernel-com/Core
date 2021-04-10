@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files\PushNotifier">
+      <UniqueIdentifier>{84079e20-4b53-4aa6-a3c7-512291228626}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\FileHelper.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GlobalPaths.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Pimpl.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Pixmap.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\QtVersionDefines.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\RuntimeException.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\SignalBlocker.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\StringHelper.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Test.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\TestSet.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Version.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\WaitCursor.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\CharArray.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\CompilerMessage.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Cryptographer.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\DiffMatchPatch.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\DiffUtility.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\TrString.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\NotifierSettings.h">
+      <Filter>Source Files\PushNotifier</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BitMask.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\UnicodeSymbols.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\AciColorScheme.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\InstanceCounter.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MarshalledFunction.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ScopeGuard.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\FileTool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\LogMessage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\NetworkTransferManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Pixmap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RuntimeException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Settings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\TestSet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ThreadSynchronizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Version.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Cryptographer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CxApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\DiffMatchPatch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\DiffUtility.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FileHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ConnectionHandler.cpp">
+      <Filter>Source Files\PushNotifier</Filter>
+    </ClCompile>
+    <ClCompile Include="source\NotificationConnectionHandler.cpp">
+      <Filter>Source Files\PushNotifier</Filter>
+    </ClCompile>
+    <ClCompile Include="source\IpMessageReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\PushNotifierClient.cpp">
+      <Filter>Source Files\PushNotifier</Filter>
+    </ClCompile>
+    <ClCompile Include="source\IpMessage.cpp">
+      <Filter>Source Files\PushNotifier</Filter>
+    </ClCompile>
+    <ClCompile Include="source\AciColorScheme.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\InstanceCounter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="source\FileTool.h">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <QtMoc Include="source\LogMessage.h">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <QtMoc Include="source\NetworkTransferManager.h">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <QtMoc Include="source\Settings.h">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <QtMoc Include="source\ThreadSynchronizer.h">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <QtMoc Include="source\CxApp.h">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <QtMoc Include="source\ConnectionHandler.h">
+      <Filter>Source Files\PushNotifier</Filter>
+    </QtMoc>
+    <QtMoc Include="source\NotificationConnectionHandler.h">
+      <Filter>Source Files\PushNotifier</Filter>
+    </QtMoc>
+    <QtMoc Include="source\IpMessage.h">
+      <Filter>Source Files\PushNotifier</Filter>
+    </QtMoc>
+    <QtMoc Include="source\IpMessageReader.h">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <QtMoc Include="source\PushNotifierClient.h">
+      <Filter>Source Files\PushNotifier</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="translations\core_de.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="translations\core_en.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_NoAcis|x64">
+      <Configuration>Debug_NoAcis</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_NoAcis|x64">
+      <Configuration>Release_NoAcis</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\AciColorScheme.h" />
+    <ClInclude Include="source\BitMask.h" />
+    <ClInclude Include="source\CharArray.h" />
+    <ClInclude Include="source\CompilerMessage.h" />
+    <QtMoc Include="source\ConnectionHandler.h" />
+    <ClInclude Include="source\Cryptographer.h" />
+    <QtMoc Include="source\PushNotifierClient.h" />
+    <ClInclude Include="source\DiffMatchPatch.h" />
+    <ClInclude Include="source\DiffUtility.h" />
+    <QtMoc Include="source\IpMessage.h" />
+    <QtMoc Include="source\IpMessageReader.h" />
+    <ClInclude Include="source\InstanceCounter.h" />
+    <ClInclude Include="source\MarshalledFunction.h" />
+    <ClInclude Include="source\NotifierSettings.h" />
+    <QtMoc Include="source\NotificationConnectionHandler.h" />
+    <ClInclude Include="source\ScopeGuard.h" />
+    <ClInclude Include="source\TrString.h" />
+    <QtMoc Include="source\CxApp.h" />
+    <ClInclude Include="source\FileHelper.h" />
+    <ClInclude Include="source\GlobalPaths.h" />
+    <ClInclude Include="source\Pimpl.h" />
+    <ClInclude Include="source\Pixmap.h" />
+    <ClInclude Include="source\QtVersionDefines.h" />
+    <ClInclude Include="source\RuntimeException.h" />
+    <ClInclude Include="source\SignalBlocker.h" />
+    <ClInclude Include="source\StringHelper.h" />
+    <ClInclude Include="source\Test.h" />
+    <ClInclude Include="source\TestSet.h" />
+    <ClInclude Include="source\UnicodeSymbols.h" />
+    <ClInclude Include="source\Version.h" />
+    <ClInclude Include="source\WaitCursor.h" />
+    <QtMoc Include="source\ThreadSynchronizer.h" />
+    <QtMoc Include="source\Settings.h" />
+    <QtMoc Include="source\NetworkTransferManager.h" />
+    <QtMoc Include="source\LogMessage.h" />
+    <QtMoc Include="source\FileTool.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\ConnectionHandler.cpp" />
+    <ClCompile Include="source\AciColorScheme.cpp" />
+    <ClCompile Include="source\Cryptographer.cpp" />
+    <ClCompile Include="source\InstanceCounter.cpp" />
+    <ClCompile Include="source\PushNotifierClient.cpp" />
+    <ClCompile Include="source\CxApp.cpp" />
+    <ClCompile Include="source\DiffMatchPatch.cpp" />
+    <ClCompile Include="source\DiffUtility.cpp" />
+    <ClCompile Include="source\FileHelper.cpp" />
+    <ClCompile Include="source\FileTool.cpp" />
+    <ClCompile Include="source\IpMessage.cpp" />
+    <ClCompile Include="source\IpMessageReader.cpp" />
+    <ClCompile Include="source\LogMessage.cpp" />
+    <ClCompile Include="source\NetworkTransferManager.cpp" />
+    <ClCompile Include="source\Pixmap.cpp" />
+    <ClCompile Include="source\RuntimeException.cpp" />
+    <ClCompile Include="source\Settings.cpp" />
+    <ClCompile Include="source\NotificationConnectionHandler.cpp" />
+    <ClCompile Include="source\Test.cpp" />
+    <ClCompile Include="source\TestSet.cpp" />
+    <ClCompile Include="source\ThreadSynchronizer.cpp" />
+    <ClCompile Include="source\Version.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="translations\core_de.ts" />
+    <None Include="translations\core_en.ts" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F6C8BB86-BF1F-4AE6-B2F0-321C805A9D00}</ProjectGuid>
+    <Keyword>QtVS_v302</Keyword>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+    <WindowsTargetPlatformVersion>$(WinSdk)</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(Toolset)</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_NoAcis|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(Toolset)</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(Toolset)</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_NoAcis|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(Toolset)</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\_propertyPages\CxStandard_All.props" />
+    <Import Project="..\_propertyPages\CxStandard_Debug.props" />
+    <Import Project="..\_propertyPages\Crypto++_Release.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_NoAcis|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\_propertyPages\CxStandard_All.props" />
+    <Import Project="..\_propertyPages\CxStandard_Debug.props" />
+    <Import Project="..\_propertyPages\Crypto++_Release.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\_propertyPages\CxStandard_All.props" />
+    <Import Project="..\_propertyPages\CxStandard_Release.props" />
+    <Import Project="..\_propertyPages\Crypto++_Release.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_NoAcis|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\_propertyPages\CxStandard_All.props" />
+    <Import Project="..\_propertyPages\CxStandard_Release.props" />
+    <Import Project="..\_propertyPages\Crypto++_Release.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetName>$(ProjectName)_Ac</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>$(ProjectName)_Ac</TargetName>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <QtInstall>$(QtPath)</QtInstall>
+    <QtModules>core;gui;network;widgets;sql;svg</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_NoAcis|x64'" Label="QtSettings">
+    <QtInstall>$(QtPath)</QtInstall>
+    <QtModules>core;gui;network;widgets;sql;svg</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <QtInstall>$(QtPath)</QtInstall>
+    <QtModules>core;gui;network;widgets;sql;svg</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_NoAcis|x64'" Label="QtSettings">
+    <QtInstall>$(QtPath)</QtInstall>
+    <QtModules>core;gui;network;widgets;sql;svg</QtModules>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>ACIS64;$(Qt_DEFINES_);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\..\ModelCore\source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_NoAcis|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\..\ModelCore\source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>ACIS64;$(Qt_DEFINES_);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\..\ModelCore\source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_NoAcis|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\..\ModelCore\source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
