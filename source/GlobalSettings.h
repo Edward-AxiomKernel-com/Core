@@ -14,10 +14,10 @@ public:
 //        : ComboSettings(QSL("Global"))
     {
         qDebug() << "GlobalSettings:";
-        qDebug() << "  " << fileName();
-        qDebug() << "  " << format();
-        qDebug() << "  " << group();
-        qDebug() << "  " << fallbacksEnabled();
+        qDebug() << "  fileName:" << fileName();
+        qDebug() << "  format:" << format();
+        qDebug() << "  group:" << group();
+        qDebug() << "  fallbacksEnabled:" << fallbacksEnabled();
     }
 
 //	static GlobalSettings* getInstance()
